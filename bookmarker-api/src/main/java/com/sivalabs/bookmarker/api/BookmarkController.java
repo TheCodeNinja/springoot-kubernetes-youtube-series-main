@@ -28,6 +28,7 @@ public class BookmarkController {
         if (query == null || query.trim().length() == 0) {
             return bookmarkService.getBookmarks(page);
         }
+        System.out.println("update");
         return bookmarkService.searchBookmarks(query, page);
     }
 
